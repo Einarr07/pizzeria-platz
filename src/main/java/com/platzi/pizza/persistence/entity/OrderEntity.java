@@ -11,7 +11,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "pizza_order")
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
 public class OrderEntity {
 
@@ -36,7 +37,7 @@ public class OrderEntity {
     private String additionalNotes;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_customer", referencedColumnName = "id_customer",  insertable = false, updatable = false)
+    @JoinColumn(name = "id_customer", referencedColumnName = "id_customer", insertable = false, updatable = false)
     @JsonIgnore
     private CustomerEntity customer;
 

@@ -9,7 +9,8 @@ import lombok.Setter;
 @Entity
 @Table(name = "order_item")
 @IdClass(OrderItemId.class)
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
 public class OrderItemEntity {
 
@@ -35,7 +36,7 @@ public class OrderItemEntity {
     private PizzaEntity pizza;
 
     @ManyToOne
-    @JoinColumn(name = "id_order", referencedColumnName = "id_order",  insertable = false, updatable = false)
+    @JoinColumn(name = "id_order", referencedColumnName = "id_order", insertable = false, updatable = false)
     @JsonIgnore
     private OrderEntity order;
 }
