@@ -1,6 +1,7 @@
 package com.platzi.pizza.service;
 
 import com.platzi.pizza.persistence.entity.OrderEntity;
+import com.platzi.pizza.persistence.projection.IOrderSummary;
 import com.platzi.pizza.persistence.repository.IOrderRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -39,5 +40,9 @@ public class OrderService {
 
     public List<OrderEntity> getCustomerOrders(String idCustomer) {
         return orderRepository.findCustomerOrders(idCustomer);
+    }
+
+    public IOrderSummary getOrderSummary(int orderId) {
+        return orderRepository.findSummary(orderId);
     }
 }
