@@ -65,7 +65,6 @@ public class PizzaController {
 
         if (pizzaEntity.getIdPizza() == null || !pizzaService.existsById(pizzaEntity.getIdPizza())) {
             return ResponseEntity.ok(pizzaService.save(pizzaEntity));
-
         }
 
         return ResponseEntity.badRequest().build();
