@@ -87,5 +87,3 @@ src/main/java/com/pizzeria/
 ## Base de datos
 - PostgreSQL  
 
-## Diagrama (Tablas)
-👉 Aquí podrías añadir un diagrama de tus entidades (ejemplo con dbdiagram.io o generado desde tu modelo).
