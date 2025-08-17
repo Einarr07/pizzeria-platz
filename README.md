@@ -56,7 +56,7 @@ La aplicación maneja las siguientes entidades principales:
 - Java 21  
 - Spring Boot  
 - Spring Data JPA  
-- PostgreSQL  
+- MySQL  
 - Gradle  
 - Docker  
 - Swagger (documentación de la API)  
@@ -85,5 +85,5 @@ src/main/java/com/pizzeria/
 ---
 
 ## Base de datos
-- PostgreSQL  
+- MySQL  
 
